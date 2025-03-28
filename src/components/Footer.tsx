@@ -1,5 +1,5 @@
 
-import { Instagram, Pinterest, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,10 +16,10 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
-                <Pinterest size={20} />
+                <Mail size={20} />
               </a>
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
-                <Mail size={20} />
+                <Phone size={20} />
               </a>
             </div>
           </div>
