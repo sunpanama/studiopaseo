@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,9 +15,20 @@ const HeroSection = () => {
               Studio Paseo brings California's organic modernism to architectural drafting, 
               interior design, landscaping, and master planning services for discerning clients.
             </p>
-            <Button className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg">
-              Explore Our Work
-            </Button>
+            <div className="space-y-3">
+              <Button className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto">
+                Book a Discovery Call
+              </Button>
+              <div className="flex items-center gap-2">
+                <Button 
+                  variant="outline" 
+                  className="border-studio-charcoal/30 hover:bg-studio-beige/30 text-studio-charcoal flex gap-2 w-full sm:w-auto"
+                >
+                  <Mail size={18} />
+                  <span>Subscribe to Newsletter</span>
+                </Button>
+              </div>
+            </div>
           </div>
           
           <div className="relative animate-fade-in">
