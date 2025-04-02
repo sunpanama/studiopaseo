@@ -29,7 +29,13 @@ const Header = () => {
           <a href="#clients" className="text-studio-charcoal hover:text-studio-green transition-colors">
             Clients
           </a>
-          <Button className="bg-studio-green hover:bg-studio-green/90 text-white">
+          <Button 
+            data-tally-open="3E6EMN" 
+            data-tally-overlay="1" 
+            data-tally-emoji-text="👋" 
+            data-tally-emoji-animation="wave"
+            className="bg-studio-green hover:bg-studio-green/90 text-white"
+          >
             Contact Us
           </Button>
         </nav>
@@ -72,7 +78,13 @@ const Header = () => {
             >
               Clients
             </a>
-            <Button className="bg-studio-green hover:bg-studio-green/90 text-white w-full">
+            <Button 
+              data-tally-open="3E6EMN" 
+              data-tally-overlay="1" 
+              data-tally-emoji-text="👋" 
+              data-tally-emoji-animation="wave"
+              className="bg-studio-green hover:bg-studio-green/90 text-white w-full"
+            >
               Contact Us
             </Button>
           </nav>
