@@ -23,6 +23,12 @@ const HeroSection = () => {
                 data-tally-emoji-text="👋" 
                 data-tally-emoji-animation="wave"
                 className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto"
+                onClick={() => {
+                  // Try to manually trigger Tally via global object if available
+                  if (window.Tally) {
+                    window.Tally.openPopup('mY9z7z');
+                  }
+                }}
               >
                 Book a Discovery Call
               </Button>

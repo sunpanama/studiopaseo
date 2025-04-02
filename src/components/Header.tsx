@@ -84,6 +84,16 @@ const Header = () => {
               data-tally-emoji-text="👋" 
               data-tally-emoji-animation="wave"
               className="bg-studio-green hover:bg-studio-green/90 text-white w-full"
+              onClick={() => {
+                toggleMenu();
+                // Add a small delay to ensure the menu closes before opening Tally
+                setTimeout(() => {
+                  // Try to manually trigger Tally via global object if available
+                  if (window.Tally) {
+                    window.Tally.openPopup('3E6EMN');
+                  }
+                }, 100);
+              }}
             >
               Contact Us
             </Button>
