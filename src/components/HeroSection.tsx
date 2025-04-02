@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
 
@@ -16,7 +17,10 @@ const HeroSection = () => {
               interior design, landscaping, and master planning services for discerning clients.
             </p>
             <div className="space-y-3">
-              <Button className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto">
+              <Button 
+                onClick={() => window.open('https://tally.so/r/mY9z7z', '_blank')} 
+                className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto"
+              >
                 Book a Discovery Call
               </Button>
               <div className="flex items-center gap-2">
