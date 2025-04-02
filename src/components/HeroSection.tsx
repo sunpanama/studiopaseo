@@ -18,7 +18,10 @@ const HeroSection = () => {
             </p>
             <div className="space-y-3">
               <Button 
-                onClick={() => window.open('https://tally.so/r/mY9z7z', '_blank')} 
+                data-tally-open="mY9z7z" 
+                data-tally-overlay="1" 
+                data-tally-emoji-text="👋" 
+                data-tally-emoji-animation="wave"
                 className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto"
               >
                 Book a Discovery Call
