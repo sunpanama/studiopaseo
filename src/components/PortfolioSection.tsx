@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -142,6 +143,63 @@ const projects: Project[] = [
     category: "communities",
     image: "public/lovable-uploads/ee1959f2-4fc3-4c31-b474-032123849904.png",
     location: "Los Angeles, CA"
+  },
+  // New Interior Design Projects
+  {
+    id: 21,
+    title: "Contemporary Bathroom Design",
+    category: "interior",
+    image: "public/lovable-uploads/4cad6549-2c99-4748-b73d-7b72b3459870.png",
+    location: "Beverly Hills, CA"
+  },
+  {
+    id: 22,
+    title: "Urban Loft Living Space",
+    category: "interior",
+    image: "public/lovable-uploads/e3164ac5-c194-4109-97b5-e769fe2d1d63.png",
+    location: "Downtown Los Angeles, CA"
+  },
+  {
+    id: 23,
+    title: "Designer Walk-in Closet",
+    category: "interior",
+    image: "public/lovable-uploads/3f94ec37-e38d-4f8a-a226-3471aeb3bc45.png",
+    location: "Manhattan Beach, CA"
+  },
+  {
+    id: 24,
+    title: "Open Concept Living & Dining",
+    category: "interior",
+    image: "public/lovable-uploads/57b7dc04-636c-4dd0-b4f3-17b590cf1bd3.png",
+    location: "West Hollywood, CA"
+  },
+  {
+    id: 25,
+    title: "Minimalist Kitchen Space",
+    category: "interior",
+    image: "public/lovable-uploads/6d0310d6-8607-4e79-8287-c5aeea889670.png",
+    location: "Venice, CA"
+  },
+  {
+    id: 26,
+    title: "Modern Studio Apartment",
+    category: "interior",
+    image: "public/lovable-uploads/82494b90-a67d-41ff-b310-c3b4bc1cc3da.png",
+    location: "San Diego, CA"
+  },
+  {
+    id: 27,
+    title: "Cozy Master Bedroom",
+    category: "interior",
+    image: "public/lovable-uploads/4116772b-c057-4607-8d2c-fd6eb63ddd2a.png",
+    location: "Pasadena, CA"
+  },
+  {
+    id: 28,
+    title: "Modern Studio Kitchen",
+    category: "interior",
+    image: "public/lovable-uploads/a30e4890-5fa8-4db1-8add-94bc3c24a4aa.png",
+    location: "Santa Monica, CA"
   }
 ];
 
@@ -154,7 +212,7 @@ const PortfolioSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Portfolio Preview</h2>
           <p className="text-studio-charcoal/70 max-w-2xl mx-auto">
-            Explore our recent projects spanning residential, commercial, and community design.
+            Explore our recent projects spanning residential, commercial, community design, and interior spaces.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mt-8">
@@ -169,6 +227,9 @@ const PortfolioSection = () => {
             </Button>
             <Button variant={filter === "communities" ? "default" : "outline"} onClick={() => setFilter("communities")} className={filter === "communities" ? "bg-studio-green text-white" : ""}>
               Communities
+            </Button>
+            <Button variant={filter === "interior" ? "default" : "outline"} onClick={() => setFilter("interior")} className={filter === "interior" ? "bg-studio-green text-white" : ""}>
+              Interior Design
             </Button>
           </div>
         </div>
@@ -193,3 +254,4 @@ const PortfolioSection = () => {
 };
 
 export default PortfolioSection;
+
