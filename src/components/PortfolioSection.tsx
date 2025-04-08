@@ -18,7 +18,7 @@ const projects: Project[] = [{
   id: 2,
   title: "Sunset Retail Complex",
   category: "commercial",
-  image: "https://images.unsplash.com/photo-1600573472592-401b489a3cdc",
+  image: "public/lovable-uploads/bf2462b9-2788-49f8-b99f-9c9c0a6c33cd.png",
   location: "Santa Monica, CA"
 }, {
   id: 3,
@@ -34,9 +34,9 @@ const projects: Project[] = [{
   location: "San Diego, CA"
 }, {
   id: 5,
-  title: "Mountain View Office",
+  title: "Rooftop Terrace Design",
   category: "commercial",
-  image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+  image: "public/lovable-uploads/a0524263-ad88-4660-bbfb-dd8e49d760e7.png",
   location: "Pasadena, CA"
 }, {
   id: 6,
@@ -44,6 +44,18 @@ const projects: Project[] = [{
   category: "residential",
   image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde",
   location: "Malibu, CA"
+}, {
+  id: 7,
+  title: "Outdoor Kitchen Pavilion",
+  category: "commercial",
+  image: "public/lovable-uploads/c84a5900-48ab-4d34-ae72-04ee1cd1ce37.png",
+  location: "Newport Beach, CA"
+}, {
+  id: 8,
+  title: "Sunset Lounge Area",
+  category: "commercial",
+  image: "public/lovable-uploads/d7a1c848-59c6-40a6-a6ad-d96d79bcc75b.png",
+  location: "Laguna Beach, CA"
 }];
 const PortfolioSection = () => {
   const [filter, setFilter] = useState("all");
