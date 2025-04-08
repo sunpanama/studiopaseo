@@ -82,6 +82,54 @@ const projects: Project[] = [{
   category: "commercial",
   image: "public/lovable-uploads/abc2d391-1006-41a1-b116-0f9df355ec12.png",
   location: "Newport Beach, CA"
+}, {
+  id: 13,
+  title: "Mojave Sun Villas",
+  category: "communities",
+  image: "public/lovable-uploads/6ed61ba7-c3b8-45bc-89fb-5f1b16784849.png",
+  location: "Palm Desert, CA"
+}, {
+  id: 14,
+  title: "Urban Development Site Plan",
+  category: "communities",
+  image: "public/lovable-uploads/6e0a8150-296e-4c35-8e5b-e0e17478f922.png",
+  location: "Bakersfield, CA"
+}, {
+  id: 15,
+  title: "Modern Apartment Layout",
+  category: "communities",
+  image: "public/lovable-uploads/35d46926-9bdb-4854-bfdf-2e4f5d91e9ef.png",
+  location: "Sacramento, CA"
+}, {
+  id: 16,
+  title: "Private Garden Terrace",
+  category: "communities",
+  image: "public/lovable-uploads/ed2298f7-866b-452f-9999-1a7744c4064d.png",
+  location: "Santa Barbara, CA"
+}, {
+  id: 17,
+  title: "Luxury Floor Plan",
+  category: "communities",
+  image: "public/lovable-uploads/6537df50-e98b-492e-949b-c2d4da59dcb1.png",
+  location: "San Jose, CA"
+}, {
+  id: 18,
+  title: "High-Rise Residential Tower",
+  category: "communities",
+  image: "public/lovable-uploads/71b0b75e-d7c9-4827-829b-45d6d62172f5.png",
+  location: "San Francisco, CA"
+}, {
+  id: 19,
+  title: "Community Master Plan",
+  category: "communities",
+  image: "public/lovable-uploads/87b7fca3-7d9a-4eb8-835a-8513b46ae7a6.png",
+  location: "Oakland, CA"
+}, {
+  id: 20,
+  title: "Urban Residential Complex",
+  category: "communities",
+  image: "public/lovable-uploads/ee1959f2-4fc3-4c31-b474-032123849904.png",
+  location: "Los Angeles, CA"
 }];
 
 const PortfolioSection = () => {
@@ -132,4 +180,3 @@ const PortfolioSection = () => {
 };
 
 export default PortfolioSection;
-
