@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+
 type Project = {
   id: number;
   title: string;
@@ -8,6 +9,7 @@ type Project = {
   image: string;
   location: string;
 };
+
 const projects: Project[] = [{
   id: 1,
   title: "Echo Park Residence",
@@ -16,9 +18,9 @@ const projects: Project[] = [{
   location: "Los Angeles, CA"
 }, {
   id: 2,
-  title: "Sunset Retail Complex",
+  title: "Luxury Bar Design",
   category: "commercial",
-  image: "public/lovable-uploads/bf2462b9-2788-49f8-b99f-9c9c0a6c33cd.png",
+  image: "public/lovable-uploads/35c3a160-48ed-4901-8348-150ea304bed1.png",
   location: "Santa Monica, CA"
 }, {
   id: 3,
@@ -34,9 +36,9 @@ const projects: Project[] = [{
   location: "San Diego, CA"
 }, {
   id: 5,
-  title: "Rooftop Terrace Design",
+  title: "Modern Gourmet Kitchen",
   category: "commercial",
-  image: "public/lovable-uploads/a0524263-ad88-4660-bbfb-dd8e49d760e7.png",
+  image: "public/lovable-uploads/623d93fc-f9d4-4cd6-a6ff-bfe0e210c2ca.png",
   location: "Pasadena, CA"
 }, {
   id: 6,
@@ -46,20 +48,22 @@ const projects: Project[] = [{
   location: "Malibu, CA"
 }, {
   id: 7,
-  title: "Outdoor Kitchen Pavilion",
+  title: "Indoor-Outdoor Living Space",
   category: "commercial",
-  image: "public/lovable-uploads/c84a5900-48ab-4d34-ae72-04ee1cd1ce37.png",
+  image: "public/lovable-uploads/36989cac-40b1-4aa8-831a-8cd08719c481.png",
   location: "Newport Beach, CA"
 }, {
   id: 8,
-  title: "Sunset Lounge Area",
+  title: "Rooftop Infinity Pool",
   category: "commercial",
-  image: "public/lovable-uploads/d7a1c848-59c6-40a6-a6ad-d96d79bcc75b.png",
+  image: "public/lovable-uploads/e2c38807-24dd-45de-a686-90f8f8fe244f.png",
   location: "Laguna Beach, CA"
 }];
+
 const PortfolioSection = () => {
   const [filter, setFilter] = useState("all");
   const filteredProjects = filter === "all" ? projects : projects.filter(project => project.category === filter);
+  
   return <section id="portfolio" className="bg-studio-white/50 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -102,4 +106,5 @@ const PortfolioSection = () => {
       </div>
     </section>;
 };
+
 export default PortfolioSection;
