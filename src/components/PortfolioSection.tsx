@@ -20,7 +20,7 @@ const projects: Project[] = [{
   id: 2,
   title: "Luxury Bar Design",
   category: "commercial",
-  image: "public/lovable-uploads/35c3a160-48ed-4901-8348-150ea304bed1.png",
+  image: "public/lovable-uploads/8ac6a75b-ff30-480a-bf19-c2b3faac7cd3.png",
   location: "Santa Monica, CA"
 }, {
   id: 3,
@@ -36,10 +36,10 @@ const projects: Project[] = [{
   location: "San Diego, CA"
 }, {
   id: 5,
-  title: "Modern Gourmet Kitchen",
+  title: "Contemporary Lounge Area",
   category: "commercial",
-  image: "public/lovable-uploads/623d93fc-f9d4-4cd6-a6ff-bfe0e210c2ca.png",
-  location: "Pasadena, CA"
+  image: "public/lovable-uploads/9170b559-8308-4e59-90cd-c18dfd90fbea.png",
+  location: "Los Angeles, CA"
 }, {
   id: 6,
   title: "Coastal Modern Villa",
@@ -48,16 +48,40 @@ const projects: Project[] = [{
   location: "Malibu, CA"
 }, {
   id: 7,
-  title: "Indoor-Outdoor Living Space",
+  title: "Rooftop Green Space",
   category: "commercial",
-  image: "public/lovable-uploads/36989cac-40b1-4aa8-831a-8cd08719c481.png",
-  location: "Newport Beach, CA"
+  image: "public/lovable-uploads/92a40306-fe6b-4f88-922c-31b10f37cac1.png",
+  location: "Irvine, CA"
 }, {
   id: 8,
   title: "Rooftop Infinity Pool",
   category: "commercial",
-  image: "public/lovable-uploads/e2c38807-24dd-45de-a686-90f8f8fe244f.png",
-  location: "Laguna Beach, CA"
+  image: "public/lovable-uploads/45b4390f-1438-4b58-8615-5cd53615d5a1.png",
+  location: "Los Angeles, CA"
+}, {
+  id: 9,
+  title: "Modern Rooftop Terrace",
+  category: "commercial",
+  image: "public/lovable-uploads/c113b480-db61-4380-a525-d4d1b612c891.png",
+  location: "San Francisco, CA"
+}, {
+  id: 10,
+  title: "Outdoor Kitchen Pavilion",
+  category: "commercial",
+  image: "public/lovable-uploads/64f9ae26-c3b8-4407-85a4-cb9d3e44b950.png",
+  location: "Napa Valley, CA"
+}, {
+  id: 11,
+  title: "Luxury Outdoor Lounge",
+  category: "commercial",
+  image: "public/lovable-uploads/01fa1d94-b713-4122-9561-b3845656b922.png",
+  location: "Beverly Hills, CA"
+}, {
+  id: 12,
+  title: "Resort Amenity Space",
+  category: "commercial",
+  image: "public/lovable-uploads/abc2d391-1006-41a1-b116-0f9df355ec12.png",
+  location: "Newport Beach, CA"
 }];
 
 const PortfolioSection = () => {
