@@ -1,30 +1,24 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Check } from "lucide-react";
+import { Check, Mail } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const NewsletterSection = () => {
-  const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubscribe = () => {
+    // Try to manually trigger Tally via global object if available
+    if (window.Tally) {
+      window.Tally.openPopup('3qNLgG');
+    }
     
-    if (!email) return;
-    
-    // Simulate subscription process
-    setTimeout(() => {
-      setIsSubscribed(true);
-      setEmail("");
-      toast({
-        title: "Subscribed successfully!",
-        description: "Thank you for joining our newsletter.",
-        variant: "default",
-      });
-    }, 500);
+    // We'll keep the toast for user feedback
+    toast({
+      title: "Form opened!",
+      description: "Please complete the subscription form.",
+      variant: "default",
+    });
   };
 
   return (
@@ -39,29 +33,24 @@ const NewsletterSection = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="flex flex-col md:flex-row gap-3">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-grow"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <Button 
-                type="submit" 
-                className="bg-studio-green hover:bg-studio-green/90 text-white"
-              >
-                Subscribe
-              </Button>
-            </div>
+          <div className="flex justify-center mb-6">
+            <Button 
+              onClick={handleSubscribe}
+              className="bg-studio-green hover:bg-studio-green/90 text-white flex gap-2" 
+              data-tally-open="3qNLgG" 
+              data-tally-overlay="1"
+              data-tally-emoji-text="📬" 
+              data-tally-emoji-animation="pulse"
+            >
+              <Mail size={18} />
+              <span>Subscribe to Newsletter</span>
+            </Button>
+          </div>
             
-            <div className="text-sm text-studio-charcoal/70 flex items-center gap-2">
-              <Check size={16} className="text-studio-green" />
-              <span>We respect your privacy and will never share your information.</span>
-            </div>
-          </form>
+          <div className="text-sm text-studio-charcoal/70 flex items-center gap-2 justify-center">
+            <Check size={16} className="text-studio-green" />
+            <span>We respect your privacy and will never share your information.</span>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
             <div className="bg-studio-beige/20 p-6 rounded-xl">
