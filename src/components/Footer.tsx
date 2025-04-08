@@ -1,4 +1,3 @@
-
 import { Instagram, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
@@ -39,8 +38,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-white/70 hover:text-white transition-colors">Residential</a></li>
               <li><a href="#" className="text-white/70 hover:text-white transition-colors">Commercial</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Hospitality</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">View All Projects</a></li>
+              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Communities</a></li>
             </ul>
           </div>
 
