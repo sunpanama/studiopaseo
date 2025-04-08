@@ -36,6 +36,16 @@ const HeroSection = () => {
                 <Button 
                   variant="outline" 
                   className="border-studio-charcoal/30 hover:bg-studio-beige/30 text-studio-charcoal flex gap-2 w-full sm:w-auto"
+                  data-tally-open="3qNLgG" 
+                  data-tally-overlay="1"
+                  data-tally-emoji-text="📬" 
+                  data-tally-emoji-animation="pulse"
+                  onClick={() => {
+                    // Try to manually trigger Tally via global object if available
+                    if (window.Tally) {
+                      window.Tally.openPopup('3qNLgG');
+                    }
+                  }}
                 >
                   <Mail size={18} />
                   <span>Subscribe to Newsletter</span>
