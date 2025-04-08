@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 type Project = {
@@ -28,7 +29,7 @@ const projects: Project[] = [{
 }, {
   id: 4,
   title: "Oceanview Hotel",
-  category: "hospitality",
+  category: "communities",
   image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
   location: "San Diego, CA"
 }, {
@@ -52,7 +53,7 @@ const PortfolioSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Portfolio Preview</h2>
           <p className="text-studio-charcoal/70 max-w-2xl mx-auto">
-            Explore our recent projects spanning residential, commercial, and hospitality design.
+            Explore our recent projects spanning residential, commercial, and community design.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mt-8">
@@ -65,8 +66,8 @@ const PortfolioSection = () => {
             <Button variant={filter === "commercial" ? "default" : "outline"} onClick={() => setFilter("commercial")} className={filter === "commercial" ? "bg-studio-green text-white" : ""}>
               Commercial
             </Button>
-            <Button variant={filter === "hospitality" ? "default" : "outline"} onClick={() => setFilter("hospitality")} className={filter === "hospitality" ? "bg-studio-green text-white" : ""}>
-              Hospitality
+            <Button variant={filter === "communities" ? "default" : "outline"} onClick={() => setFilter("communities")} className={filter === "communities" ? "bg-studio-green text-white" : ""}>
+              Communities
             </Button>
           </div>
         </div>
