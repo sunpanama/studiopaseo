@@ -1,4 +1,5 @@
-import { Instagram, Mail, Phone } from "lucide-react";
+
+import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,13 +13,16 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
                 <Mail size={20} />
-              </a>
-              <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
-                <Phone size={20} />
               </a>
             </div>
           </div>
@@ -48,14 +52,6 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <div className="pt-0.5"><Mail size={16} /></div>
                 <span className="text-white/70">hello@studiopaseo.com</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="pt-0.5"><Phone size={16} /></div>
-                <span className="text-white/70">(310) 555-1234</span>
-              </li>
-              <li className="text-white/70 mt-2">
-                123 Design Avenue<br />
-                Santa Monica, CA 90401
               </li>
             </ul>
           </div>
