@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Facebook, Instagram, Mail, X } from "lucide-react";
 
@@ -16,7 +17,7 @@ const Footer = () => {
                 <Facebook size={20} />
               </a>
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
-                <X size={20} />
+                <X size={20} strokeWidth={1.5} />
               </a>
               <a href="#" className="text-white hover:text-studio-beige-light transition-colors">
                 <Instagram size={20} />
