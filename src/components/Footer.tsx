@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Instagram, Mail } from "lucide-react";
 
@@ -47,9 +46,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Portfolio</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Residential</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Commercial</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Communities</a></li>
+              <li><a href="#portfolio" className="text-white/70 hover:text-white transition-colors">Residential</a></li>
+              <li><a href="#portfolio" className="text-white/70 hover:text-white transition-colors">Commercial</a></li>
+              <li><a href="#portfolio" className="text-white/70 hover:text-white transition-colors">Communities</a></li>
+              <li><a href="#portfolio" className="text-white/70 hover:text-white transition-colors">Interior Design</a></li>
             </ul>
           </div>
 
