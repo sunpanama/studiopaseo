@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Mail } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -57,7 +57,6 @@ const Footer = () => {
             <h3 className="text-lg font-medium mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <div className="pt-0.5"><Mail size={16} /></div>
                 <span className="text-white/70">hello@studiopaseo.com</span>
               </li>
             </ul>
@@ -65,7 +64,13 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 mt-8 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} Studio Paseo. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+            <p>© {new Date().getFullYear()} Studio Paseo. All rights reserved.</p>
+            <div className="flex gap-4">
+              <a href="/privacy-policy.pdf" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms-and-conditions.pdf" className="hover:text-white transition-colors">Terms & Conditions</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
