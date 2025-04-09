@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="hero-gradient pt-24 pb-16 md:py-32">
+  return <section className="hero-gradient pt-24 pb-16 md:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
@@ -17,36 +14,21 @@ const HeroSection = () => {
               interior design, landscaping, and master planning services for discerning clients.
             </p>
             <div className="space-y-3">
-              <Button 
-                data-tally-open="mY9z7z" 
-                data-tally-overlay="1" 
-                data-tally-emoji-text="👋" 
-                data-tally-emoji-animation="wave"
-                className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto"
-                onClick={() => {
-                  // Try to manually trigger Tally via global object if available
-                  if (window.Tally) {
-                    window.Tally.openPopup('mY9z7z');
-                  }
-                }}
-              >
+              <Button data-tally-open="mY9z7z" data-tally-overlay="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave" className="bg-studio-green hover:bg-studio-green/90 text-white px-8 py-6 text-lg w-full sm:w-auto" onClick={() => {
+              // Try to manually trigger Tally via global object if available
+              if (window.Tally) {
+                window.Tally.openPopup('mY9z7z');
+              }
+            }}>
                 Book a Discovery Call
               </Button>
               <div className="flex items-center gap-2">
-                <Button 
-                  variant="outline" 
-                  className="border-studio-charcoal/30 hover:bg-studio-beige/30 text-studio-charcoal flex gap-2 w-full sm:w-auto"
-                  data-tally-open="3qNLgG" 
-                  data-tally-overlay="1"
-                  data-tally-emoji-text="📬" 
-                  data-tally-emoji-animation="pulse"
-                  onClick={() => {
-                    // Try to manually trigger Tally via global object if available
-                    if (window.Tally) {
-                      window.Tally.openPopup('3qNLgG');
-                    }
-                  }}
-                >
+                <Button variant="outline" className="border-studio-charcoal/30 hover:bg-studio-beige/30 text-studio-charcoal flex gap-2 w-full sm:w-auto" data-tally-open="3qNLgG" data-tally-overlay="1" data-tally-emoji-text="📬" data-tally-emoji-animation="pulse" onClick={() => {
+                // Try to manually trigger Tally via global object if available
+                if (window.Tally) {
+                  window.Tally.openPopup('3qNLgG');
+                }
+              }}>
                   <Mail size={18} />
                   <span>Subscribe to Newsletter</span>
                 </Button>
@@ -56,23 +38,17 @@ const HeroSection = () => {
           
           <div className="relative animate-fade-in">
             <div className="aspect-square rounded-2xl overflow-hidden card-shadow">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" 
-                alt="Modern California home with clean lines and natural materials" 
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" alt="Modern California home with clean lines and natural materials" className="w-full h-full object-cover" />
             </div>
             
             {/* Floating element */}
-            <div className="absolute -bottom-8 -left-8 md:-left-16 bg-white p-4 md:p-6 rounded-xl card-shadow">
+            <div className="absolute -bottom-8 -left-8 md:-left-16 bg-white p-4 md:p-6 rounded-xl card-shadow my-0 mx-[25px]">
               <p className="text-sm md:text-base font-medium">Bringing dreams to reality</p>
               <p className="text-xs md:text-sm text-studio-charcoal/70">Southern California</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
