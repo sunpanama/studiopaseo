@@ -1,1 +1,24 @@
 
+#!/bin/sh
+# Build the project
+npm run build
+
+# Navigate into the build output directory
+cd dist
+
+# Create .nojekyll file to bypass Jekyll processing on GitHub Pages
+touch .nojekyll
+
+# Copy the CNAME file to the dist folder
+cp ../public/CNAME .
+
+# If you are using git
+git init
+git checkout -B main
+git add -A
+git commit -m 'deploy'
+
+# If you are deploying to https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:sunpanama/studiopaseo.git main:gh-pages
+
+cd -
