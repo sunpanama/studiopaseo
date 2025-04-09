@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Facebook, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -68,8 +69,8 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
             <p>© {new Date().getFullYear()} Studio Paseo. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="/privacy-policy.pdf" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="/terms-and-conditions.pdf" className="hover:text-white transition-colors">Terms & Conditions</a>
+              <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             </div>
           </div>
         </div>
