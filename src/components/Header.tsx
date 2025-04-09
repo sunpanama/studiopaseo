@@ -17,14 +17,14 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <a href="#about" className="text-studio-charcoal hover:text-studio-green transition-colors">
+            About
+          </a>
           <a href="#services" className="text-studio-charcoal hover:text-studio-green transition-colors">
             Services
           </a>
           <a href="#portfolio" className="text-studio-charcoal hover:text-studio-green transition-colors">
             Portfolio
-          </a>
-          <a href="#about" className="text-studio-charcoal hover:text-studio-green transition-colors">
-            About
           </a>
           <a href="#clients" className="text-studio-charcoal hover:text-studio-green transition-colors">
             Clients
@@ -51,6 +51,13 @@ const Header = () => {
         <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md p-4">
           <nav className="flex flex-col space-y-4">
             <a 
+              href="#about" 
+              className="text-studio-charcoal hover:text-studio-green transition-colors p-2"
+              onClick={toggleMenu}
+            >
+              About
+            </a>
+            <a 
               href="#services" 
               className="text-studio-charcoal hover:text-studio-green transition-colors p-2"
               onClick={toggleMenu}
@@ -63,13 +70,6 @@ const Header = () => {
               onClick={toggleMenu}
             >
               Portfolio
-            </a>
-            <a 
-              href="#about" 
-              className="text-studio-charcoal hover:text-studio-green transition-colors p-2"
-              onClick={toggleMenu}
-            >
-              About
             </a>
             <a 
               href="#clients" 
