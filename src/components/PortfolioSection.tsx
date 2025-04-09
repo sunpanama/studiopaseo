@@ -1,13 +1,12 @@
+
 import { useState } from "react";
 import { projects } from "@/data/portfolioProjects";
 import ProjectCard from "./portfolio/ProjectCard";
 import ProjectFilters from "./portfolio/ProjectFilters";
 
 const PortfolioSection = () => {
-  const [filter, setFilter] = useState("all");
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => project.category === filter);
+  const [filter, setFilter] = useState("residential");
+  const filteredProjects = projects.filter(project => project.category === filter);
   
   return (
     <section id="portfolio" className="bg-studio-white/50 py-16 md:py-24">

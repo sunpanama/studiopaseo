@@ -8,7 +8,6 @@ interface ProjectFiltersProps {
 
 const ProjectFilters = ({ currentFilter, onFilterChange }: ProjectFiltersProps) => {
   const filters = [
-    { value: "all", label: "All Projects" },
     { value: "residential", label: "Residential" },
     { value: "commercial", label: "Commercial" },
     { value: "communities", label: "Communities" },
