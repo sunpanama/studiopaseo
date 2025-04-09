@@ -210,5 +210,48 @@ export const projects: Project[] = [
     category: "communities",
     image: "public/lovable-uploads/d533269d-4d23-455e-87a2-f20f065bd9db.png",
     location: "Monterey, CA"
+  },
+  // Add the six new residential projects
+  {
+    id: 31,
+    title: "Modern Coastal Residence",
+    category: "residential",
+    image: "public/lovable-uploads/49bf55a2-03a5-462f-b0a6-d500bbf24a91.png",
+    location: "Newport Beach, CA"
+  },
+  {
+    id: 32,
+    title: "Mediterranean Villa",
+    category: "residential",
+    image: "public/lovable-uploads/6641e8a0-15e7-41b3-9b2f-405ba9a625a1.png",
+    location: "San Diego, CA"
+  },
+  {
+    id: 33,
+    title: "Luxury Ranch Estate",
+    category: "residential",
+    image: "public/lovable-uploads/65eeba29-7e87-4ebc-9f4f-45960cd98789.png",
+    location: "Sonoma, CA"
+  },
+  {
+    id: 34,
+    title: "Courtyard Residence",
+    category: "residential",
+    image: "public/lovable-uploads/a09d29e9-5f94-4b27-8b11-d0eda8b3f0fd.png",
+    location: "Santa Barbara, CA"
+  },
+  {
+    id: 35,
+    title: "Spanish Inspired Casita",
+    category: "residential",
+    image: "public/lovable-uploads/1cf2cea1-5bb8-43d3-b4d4-901ba441bc9f.png",
+    location: "Palo Alto, CA"
+  },
+  {
+    id: 36,
+    title: "California Bungalow",
+    category: "residential",
+    image: "public/lovable-uploads/3692e469-0b80-4527-b681-757c5fafa366.png",
+    location: "Carmel, CA"
   }
 ];
