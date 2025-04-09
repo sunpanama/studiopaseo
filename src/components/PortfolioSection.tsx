@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -144,7 +143,6 @@ const projects: Project[] = [
     image: "public/lovable-uploads/ee1959f2-4fc3-4c31-b474-032123849904.png",
     location: "Los Angeles, CA"
   },
-  // New Interior Design Projects
   {
     id: 21,
     title: "Contemporary Bathroom Design",
@@ -200,6 +198,20 @@ const projects: Project[] = [
     category: "interior",
     image: "public/lovable-uploads/a30e4890-5fa8-4db1-8add-94bc3c24a4aa.png",
     location: "Santa Monica, CA"
+  },
+  {
+    id: 29,
+    title: "Modernist Residential Complex",
+    category: "communities",
+    image: "public/lovable-uploads/3e234998-b206-4ece-b510-38ce711e2853.png",
+    location: "Santa Cruz, CA"
+  },
+  {
+    id: 30,
+    title: "Contemporary Apartment Development",
+    category: "communities",
+    image: "public/lovable-uploads/d533269d-4d23-455e-87a2-f20f065bd9db.png",
+    location: "Monterey, CA"
   }
 ];
 
@@ -254,4 +266,3 @@ const PortfolioSection = () => {
 };
 
 export default PortfolioSection;
-
