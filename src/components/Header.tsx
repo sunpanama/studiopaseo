@@ -11,8 +11,12 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 py-4 px-6">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="font-serif text-xl font-medium">
-          Studio Paseo
+        <a href="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/df48e500-6713-4b81-8473-768d73eafccb.png" 
+            alt="Studio Paseo Logo" 
+            className="h-12 mr-2"
+          />
         </a>
 
         {/* Desktop Navigation */}
